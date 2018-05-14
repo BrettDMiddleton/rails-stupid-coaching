@@ -1,3 +1,16 @@
-<h1>Stupid Coaching</h1>
-
-<p><%= @answer  %></p>
+<div class="container">
+  <div class="body">
+    <div class="row">
+      <h1>Stupid Coaching</h1>
+    </div>
+    <div class="row">
+      <p><%= @user_input %></p>
+      <p>-You</p>
+    </div>
+    <div class="row" style="background-color: lightyellow">
+      <p><strong><%= @answer %></strong></p>
+      <p> -Your Couch </p>
+    </div>
+  <%= link_to "Ask another question", ask_path, class: "btn btn-primary" %>
+  </div>
+</div>
